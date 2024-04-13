@@ -1,10 +1,43 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
 import FadeInWayPoint from '../../utils/FadeInWayPoint.vue'
+
+function configureScroll() {
+    window.addEventListener("scroll", (event) => {
+        let scroll = window.scrollY;
+        let navbar = document.getElementById('ftco_navbar');
+
+        if (navbar === null) return;
+        if (scroll > 150) {
+				if (!navbar.classList.contains('scrolled') ) {
+					navbar.classList.add('scrolled');	
+				}
+			} 
+			if (scroll < 150) {
+				if (navbar.classList.contains('scrolled') ) {
+					navbar.classList.remove('scrolled');
+                    navbar.classList.remove('sleep');
+				}
+			} 
+			if (scroll > 350 ) {
+				if (!navbar.classList.contains('awake') ) {
+					navbar.classList.add('awake');	
+				}
+			}
+			if (scroll < 350 ) {
+				if (navbar.classList.contains('awake') ) {
+					navbar.classList.remove('awake');
+					navbar.classList.add('sleep');
+				}
+			}
+    });
+}
+
+configureScroll();
 </script>
 
 <template>
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco_navbar">
         <div class="container">
             <FadeInWayPoint direction="RIGHT">
                 <RouterLink class="navbar-brand" to="/">Cocktail <span>Mate</span></RouterLink>

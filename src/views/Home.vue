@@ -13,7 +13,7 @@ const numFormat = (number: Number) => {
 }
 
 async function fetchCocktails() {
-    const cocktails = await fetch('http://ec2-3-106-115-236.ap-southeast-2.compute.amazonaws.com:8080/api/cocktail')
+    const cocktails = await fetch('https://api.cocktails.majatech.net:7443/api/cocktail')
     .then(res => res.json())
     
     store.cocktails = cocktails
