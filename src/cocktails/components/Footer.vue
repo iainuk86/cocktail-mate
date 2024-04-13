@@ -70,7 +70,7 @@ import FadeInWayPoint from '../../utils/FadeInWayPoint.vue'
                                     <span class="text">Sydney, Australia</span>
                                 </li>
                                 <li>
-                                    <a href="https:/portfolio.majatech.net:444" target="_blank">
+                                    <a href="https://portfolio.majatech.net:444" target="_blank">
                                         <span class="icon fa fa-briefcase"></span>
                                         <span class="text">My Portfolio</span>
                                     </a>
