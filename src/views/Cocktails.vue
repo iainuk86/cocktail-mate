@@ -9,7 +9,7 @@ import type Cocktail from '@/cocktails/types/Cocktail'
 const store = useCocktailsStore()
 
 function convertCocktailNameToFilePath(cocktailName: string) {
-    return 'src/assets/images/cocktails/' + cocktailName.toLowerCase().split(' ').join('-') + '.png'
+    return '/images/cocktails/' + cocktailName.toLowerCase().split(' ').join('-') + '.png'
 }
 
 function updateActiveCocktail(cocktail: Cocktail) {

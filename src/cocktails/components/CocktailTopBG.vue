@@ -7,7 +7,7 @@ interface Props {
 }
 const props = defineProps<Props>()
 
-const bg = ref<string>("/src/assets/images/plantation.png")
+const bg = ref<string>("/images/plantation.png")
 </script>
 
 <template>

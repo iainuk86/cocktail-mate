@@ -33,7 +33,7 @@ fetchCocktails()
         <div class="container">
             <div class="row">
                 <div class="col-md-6 img img-3 d-flex justify-content-center align-items-center"
-                    :style="{ backgroundImage: 'url(\'src/assets/images/cocktails/mai-tai.png\')' }">
+                    :style="{ backgroundImage: 'url(\'/images/cocktails/mai-tai.png\')' }">
                 </div>
                 <div class="col-md-6 wrap-about pl-md-5 py-5">
                     <FadeInWayPoint>

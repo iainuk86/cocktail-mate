@@ -9,7 +9,7 @@ const currentCocktail = ref<Cocktail>(store.activeCocktail)
 
 const ingredients = ref<string[]>(currentCocktail.value.ingredients.split(','))
 
-const imgSrc = '/src/assets/images/cocktails/'
+const imgSrc = '/images/cocktails/'
 function convertCocktailNameToFilePath(cocktailName: string) {
     return imgSrc + cocktailName.toLowerCase().split(' ').join('-') + '.png'
 }

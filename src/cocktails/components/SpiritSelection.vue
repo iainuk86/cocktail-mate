@@ -19,7 +19,7 @@ function filterBySpirit(spirit: string) {
                 <div class="col-lg-2 col-md-4 ">
                     <FadeInWayPoint>
                         <div class="spirit w-100 text-center" @click="filterBySpirit('Brandy')">
-                            <div class="img" :style="{ backgroundImage: 'url(\'src/assets/images/brandy.png\')' }"></div>
+                            <div class="img" :style="{ backgroundImage: 'url(\'/images/brandy.png\')' }"></div>
                             <h3>Brandy</h3>
                         </div>
                     </FadeInWayPoint>
@@ -27,7 +27,7 @@ function filterBySpirit(spirit: string) {
                 <div class="col-lg-2 col-md-4 ">
                     <FadeInWayPoint :delay="50">
                         <div class="spirit w-100 text-center" @click="filterBySpirit('Gin')">
-                            <div class="img" :style="{ backgroundImage: 'url(\'src/assets/images/gin.png\')' }"></div>
+                            <div class="img" :style="{ backgroundImage: 'url(\'/images/gin.png\')' }"></div>
                             <h3>Gin</h3>
                         </div>
                     </FadeInWayPoint>
@@ -35,7 +35,7 @@ function filterBySpirit(spirit: string) {
                 <div class="col-lg-2 col-md-4 ">
                     <FadeInWayPoint :delay="100">
                         <div class="spirit w-100 text-center" @click="filterBySpirit('Rum')">
-                            <div class="img" :style="{ backgroundImage: 'url(\'src/assets/images/rum.png\')' }"></div>
+                            <div class="img" :style="{ backgroundImage: 'url(\'/images/rum.png\')' }"></div>
                             <h3>Rum</h3>
                         </div>
                     </FadeInWayPoint>
@@ -43,7 +43,7 @@ function filterBySpirit(spirit: string) {
                 <div class="col-lg-2 col-md-4 ">
                     <FadeInWayPoint :delay="150">
                         <div class="spirit w-100 text-center" @click="filterBySpirit('Tequila')">
-                            <div class="img" :style="{ backgroundImage: 'url(\'src/assets/images/tequila.png\')' }"></div>
+                            <div class="img" :style="{ backgroundImage: 'url(\'/images/tequila.png\')' }"></div>
                             <h3>Tequila</h3>
                         </div>
                     </FadeInWayPoint>
@@ -51,7 +51,7 @@ function filterBySpirit(spirit: string) {
                 <div class="col-lg-2 col-md-4 ">
                     <FadeInWayPoint :delay="200">
                         <div class="spirit w-100 text-center" @click="filterBySpirit('Vodka')">
-                            <div class="img" :style="{ backgroundImage: 'url(\'src/assets/images/vodka.png\')' }"></div>
+                            <div class="img" :style="{ backgroundImage: 'url(\'/images/vodka.png\')' }"></div>
                             <h3>Vodka</h3>
                         </div>
                     </FadeInWayPoint>
@@ -59,7 +59,7 @@ function filterBySpirit(spirit: string) {
                 <div class="col-lg-2 col-md-4 ">
                     <FadeInWayPoint :delay="250">
                         <div class="spirit w-100 text-center" @click="filterBySpirit('Whiskey')">
-                            <div class="img" :style="{ backgroundImage: 'url(\'src/assets/images/whiskey.png\')' }"></div>
+                            <div class="img" :style="{ backgroundImage: 'url(\'/images/whiskey.png\')' }"></div>
                             <h3>Whiskey</h3>
                         </div>
                     </FadeInWayPoint>
@@ -108,6 +108,17 @@ function filterBySpirit(spirit: string) {
     left: 10px;
     right: 10px;
     bottom: 10px;
+    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.spirit .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.spirit .img img {
     border-color: rgba(255, 255, 255, 0.3);
     background: rgba(255, 255, 255, 0.4);
 }
