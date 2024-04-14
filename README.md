@@ -1,40 +1,13 @@
-# cocktail-mate
+# 🍸 Cocktail Mate 🍸
 
-This template should help get you started developing with Vue 3 in Vite.
+Cocktail Mate is a web service providing great recipes and cocktail advice.  
+It was built with an E-commerce style and was a great way for me to learn the Vue framework.
 
-## Recommended IDE Setup
+# ⚒️ Implementation ⚒️
+Started life as a traditional Bootstrap / HTML / CSS / JS web template.  
+It was then migrated for use in a Spring Boot app, making use of Thymeleaf templates.  
+Now it has been migrated to use mainly client-side rendering with the Vue framework.  
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-pnpm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-pnpm dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-pnpm build
-```
+# 🔜 Coming Soon ⚠️
+- Implement an AI Chatbot to receive various prompts and recommend cocktails for the ingredients / weather at hand.
+- A more responsive design for mobile users.  
