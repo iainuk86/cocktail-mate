@@ -53,7 +53,7 @@ fetchCocktails()
                                continued until today. Here we make it without.</p>
                             <p class="year">
                                 <span>(Ir)responsibly drunk for </span>
-                                <VueNumberAnimation ref="number1" class="aniNumber" :from="0" :to="77" :format="numFormat"
+                                <VueNumberAnimation ref="number1" class="aniNumber" :from="0" :to="80" :format="numFormat"
                                     :duration="2.5" easing="linear" />
                                 <span> Years.</span>
                             </p>
